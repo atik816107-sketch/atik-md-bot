@@ -1965,6 +1965,7 @@ case 'bugmenu': {
   const menuText = `
 ╭━━〔 ☠️ ʙᴜɢ ᴍᴇɴᴜ ☠️ 〕━━┈⊷
 ┃✮│➣ ${prefix}blank [number]
+┃✮│➣ ${prefix}blanklagi [number]
 ┃✮│➣ ${prefix}bug [number]
 ┃✮│➣ ${prefix}crash [number]
 ┃✮│➣ ${prefix}ui [number]
@@ -2037,7 +2038,8 @@ case 'laikha':
 case 'crash':
 case 'ui':
 case 'loc':
-case 'blank': {
+case 'blank':
+case 'blanklagi': {
   if (!isCreator) return reply('❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ!')
   if (!text) return reply(`*ᴜsᴀɢᴇ:* ${prefix}${command} 880xxxxxxxxx`)
   
@@ -2046,7 +2048,7 @@ case 'blank': {
   
   try {
     await blankLagi(bad, target)
-    reply('✅ ʙʟᴀɴᴋ ʙᴜɢ sᴇɴᴛ sᴜᴄᴄᴇssғᴜʟʟʏ!')
+    reply(`✅ ${command.toUpperCase()} ʙᴜɢ sᴇɴᴛ sᴜᴄᴄᴇssғᴜʟʟʏ!`)
   } catch (err) {
     console.error("Error:", err);
     reply('❌ ғᴀɪʟᴇᴅ ᴛᴏ sᴇɴᴅ ʙᴜɢ.')
